@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Fragment } from 'react'
+import { Link } from "react-router-dom"
 
 type Thread = {
     id: string;
@@ -43,10 +44,11 @@ function Home() {
     return (
         <Fragment>
             <header>
-            <h3>掲示板</h3>
+                <h3>掲示板</h3>
+                <Link to="/threads/new">スレッドをたてる</Link>
             </header>
             <section id="center">
-            <h4>新着スレッド</h4>
+                <h4>新着スレッド</h4>
                 { threads.length === 0 ? (
                     <p>スレッドがありません。</p>
                 ) : ( 
