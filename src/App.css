@@ -63,3 +63,30 @@ input {
   margin-left: 18px;
   padding: 3px 36px;
 }
+
+.threads {
+  width: 80%;
+  margin: 0 auto;
+}
+.thread {
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.thread > a {
+  text-decoration: none;
+}
+
+.posts {
+  width: 50%;
+  margin: 0 auto;
+}
+.post {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}

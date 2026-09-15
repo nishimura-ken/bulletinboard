@@ -52,14 +52,15 @@ function Home() {
                 { threads.length === 0 ? (
                     <p>スレッドがありません。</p>
                 ) : ( 
-                    <table>
-                    <tbody> {threads.map((thread) => (
-                        <tr key={thread.id}>
-                        <td>{thread.title}</td>
-                        </tr>
+                    <div className="threads">
+                        {threads.map((thread) => (
+                            <div className="thread" key={thread.id}>
+                                <Link to={"/threads/" + thread.id} state={{ title: thread.title }}>
+                                    {thread.title}
+                                </Link> 
+                            </div>
                         ))}
-                    </tbody>
-                    </table>
+                    </div>
                 )}
             </section>
         </Fragment>
